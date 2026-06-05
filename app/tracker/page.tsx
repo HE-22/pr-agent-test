@@ -12,8 +12,11 @@ export default function TrackerPage() {
       </h1>
       <p className="lead">Progress and habits — matches the mobile Tracker tab.</p>
       <div className="card" data-testid="tracker-card">
+        <p data-testid="tracker-helper" style={{ color: "var(--muted)", marginTop: 0 }}>
+          Build a consistent daily rhythm with one quick check-in.
+        </p>
         <p data-testid="tracker-status" style={{ marginTop: 0 }}>
-          {loggedToday ? "Logged today" : "Not logged today"}
+          {loggedToday ? "Streak saved" : "Ready to save streak"}
         </p>
         <button
           data-testid="log-today-button"
@@ -28,7 +31,7 @@ export default function TrackerPage() {
             padding: "0.7rem 1rem",
           }}
         >
-          Log today
+          Save streak
         </button>
       </div>
     </>

@@ -18,6 +18,6 @@ class SessionStore:
 
         user_id, created_at = session
         if datetime.now(UTC) - created_at > self.ttl:
-            return user_id
+            return None
 
         return user_id

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign in</title>
+  </head>
+  <body>
+    <main>
+      <h1>Login Page</h1>
+      <form action="/authenticate" method="post">
+        <label for="username">Username</label>
+        <input id="username" name="username" autocomplete="username" required>
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required>
+
+        <button type="submit">Login</button>
+      </form>
+    </main>
+  </body>
+</html>
